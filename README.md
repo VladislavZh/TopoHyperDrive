@@ -49,6 +49,8 @@ conda activate myenv
 
 ## How to run
 
+You can use the following link to reproduce the results https://colab.research.google.com/drive/1ZjdnuB5BbmxBUw5-k8WB3eYi5wuX1Vry?usp=sharing.
+
 Train model with default configuration:
 
 ```bash
@@ -66,7 +68,7 @@ python src/train.py -m trainer=gpu hparams_search=random_search_optuna
 ```
 
 Test the nodel from checkpoint, as a checkpoint one should use the checkpoint from the logs, e.g
-"logs/tpe_search/multiruns/2024-04-25_23-56-58/0/checkpoints/epoch_099.ckpt":
+"logs/tpe_search/multiruns/2024-04-25_23-56-58/0/checkpoints/epoch_099.ckpt", some checkpoints can be found here https://drive.google.com/drive/u/0/folders/1UybZ9aFfjkdNBbgS3jVtf67YNeu7UDJh, for other checkpoints, please, write me in tg (@zhuzhel):
 
 ```bash
 python src/eval.py -m trainer=gpu ckpt_path=???
