@@ -84,7 +84,7 @@ python src/train.py trainer.max_epochs=20 data.batch_size=64
 
 ## Project Structure
 
-The directory structure of new project looks like this:
+The directory structure of a project:
 
 ```
 ├── .github                   <- Github Actions workflows
