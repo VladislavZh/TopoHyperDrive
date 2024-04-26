@@ -1,0 +1,13 @@
+- model.net.num_hidden=3796
+- model.net.block_1_nb_filter=160
+- model.net.block_1_nb_layers=1
+- model.net.block_2_nb_filter=171
+- model.net.block_2_nb_layers=1
+- model.net.block_3_nb_filter=21
+- model.net.block_3_nb_layers=4
+- model.net.block_4_nb_filter=168
+- model.net.block_4_nb_layers=2
+- model.net.block_5_nb_filter=316
+- model.net.block_5_nb_layers=1
+- trainer=gpu
+- hparams_search=tpe_search_optuna

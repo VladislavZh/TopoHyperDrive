@@ -54,6 +54,8 @@ def train(cfg: DictConfig) -> Tuple[Dict[str, Any], Dict[str, Any]]:
     if cfg.get("seed"):
         L.seed_everything(cfg.seed, workers=True)
 
+    torch.set_float32_matmul_precision('high')
+
     log.info(f"Instantiating datamodule <{cfg.data._target_}>")
     datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
 
@@ -117,7 +119,10 @@ def main(cfg: DictConfig) -> Optional[float]:
     extras(cfg)
 
     # train the model
-    metric_dict, _ = train(cfg)
+    try:
+        metric_dict, _ = train(cfg)
+    except:
+        return -1
 
     # safely retrieve metric value for hydra-based hyperparameter optimization
     metric_value = get_metric_value(
