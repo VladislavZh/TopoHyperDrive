@@ -1,0 +1,14 @@
+name: optuna
+best_params:
+  model.net.num_hidden: 2507
+  model.net.block_1_nb_filter: 44
+  model.net.block_1_nb_layers: 4
+  model.net.block_2_nb_filter: 227
+  model.net.block_2_nb_layers: 3
+  model.net.block_3_nb_filter: 216
+  model.net.block_3_nb_layers: 2
+  model.net.block_4_nb_filter: 56
+  model.net.block_4_nb_layers: 1
+  model.net.block_5_nb_filter: 189
+  model.net.block_5_nb_layers: 1
+best_value: 0.4505999982357025
