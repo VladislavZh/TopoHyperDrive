@@ -44,6 +44,10 @@ class ImageClassificationModule(LightningModule):
         """
         return self.net(x)
 
+    def get_embeddings(self, x: torch.Tensor) -> torch.Tensor:
+        _, embeddings = self.net(x, return_features=True)
+        return embeddings
+
     def on_train_start(self) -> None:
         """Lightning hook that is called when training begins."""
         # by default lightning executes validation step sanity checks before training starts,

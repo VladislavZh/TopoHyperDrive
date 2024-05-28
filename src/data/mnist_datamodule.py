@@ -6,6 +6,8 @@ from torch.utils.data import ConcatDataset, DataLoader, Dataset, random_split
 from torchvision.datasets import MNIST
 from torchvision.transforms import transforms
 
+import hydra_plugins.hydra_optuna_sweeper.optuna_sweeper.OptunaSweeper
+
 
 class MNISTDataModule(LightningDataModule):
     """`LightningDataModule` for the MNIST dataset.

@@ -1,0 +1,14 @@
+- model.net.num_hidden=3321
+- model.net.block_1_nb_filter=32
+- model.net.block_1_nb_layers=4
+- model.net.block_2_nb_filter=195
+- model.net.block_2_nb_layers=2
+- model.net.block_3_nb_filter=161
+- model.net.block_3_nb_layers=2
+- model.net.block_4_nb_filter=64
+- model.net.block_4_nb_layers=1
+- model.net.block_5_nb_filter=161
+- model.net.block_5_nb_layers=1
+- trainer=gpu
+- callbacks=rtd_score_pca
+- hparams_search=pca_one_to_random_multi_objective

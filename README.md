@@ -61,13 +61,19 @@ python src/train.py trainer=cpu
 python src/train.py trainer=gpu
 ```
 
-Reproduce hyperparameter search experiments (available options are random_search_optuna, tpe_search_optuna):
+Reproduce baseline hyperparameter search experiments (available options are `random_search_optuna`, `tpe_search_optuna`):
 
 ```bash
 python src/train.py -m trainer=gpu hparams_search=random_search_optuna
 ```
 
-Test the nodel from checkpoint, as a checkpoint one should use the checkpoint from the logs, e.g
+Reproduce RTD hyperparameter search experiments (available options are `one_to_random_single_objective`, `one_to_random_multi_objective`, `pca_one_to_random_multi_objective`), requires `callbacks=rtd_score` or `rtd_score_pca` callbacks correspondingly:
+
+```bash
+python .\src\train.py -m trainer=gpu callbacks=rtd_score_pca hparams_search=pca_one_to_random_multi_objective 
+```
+
+Test the model from checkpoint, as a checkpoint one should use the checkpoint from the logs, e.g
 "logs/tpe_search/multiruns/2024-04-25_23-56-58/0/checkpoints/epoch_099.ckpt", some checkpoints can be found here https://drive.google.com/drive/u/0/folders/1UybZ9aFfjkdNBbgS3jVtf67YNeu7UDJh, for other checkpoints, please, write me in tg (@zhuzhel):
 
 ```bash

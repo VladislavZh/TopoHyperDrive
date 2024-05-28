@@ -38,12 +38,15 @@ class MetaSearchVGGLike(nn.Module):
         self.num_classes = num_classes
         self.convs = self.init_convs(architecture)
         self.fcs = self.init_fcs(architecture)
+        self.final_layer = nn.Linear(self.num_hidden, self.num_classes)
 
-    def forward(self, x):
+    def forward(self, x, return_features=False):
         x = self.convs(x)
         x = x.reshape(x.size(0), -1)
         x = self.fcs(x)
-        return x
+        if return_features:
+            return self.final_layer(x), x
+        return self.final_layer(x)
 
     def init_fcs(self, architecture):
         pool_count = architecture.count("M")
@@ -66,7 +69,6 @@ class MetaSearchVGGLike(nn.Module):
             nn.Linear(self.num_hidden, self.num_hidden),
             nn.ReLU(),
             nn.Dropout(p=0.5),
-            nn.Linear(self.num_hidden, self.num_classes)
         )
 
     def init_convs(self, architecture):
