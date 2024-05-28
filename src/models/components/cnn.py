@@ -141,9 +141,7 @@ class MetaSearchVGGLike(nn.Module):
         x = self.convs(x)
         x = x.reshape(x.size(0), -1)
         x = self.fcs(x)
-        if return_features:
-            return self.final_layer(x), x
-        return self.final_layer(x)
+        return x
 
     def init_fcs(self, architecture):
         pool_count = architecture.count("M")
