@@ -1,0 +1,12 @@
+defaults:
+  - default
+  - _self_
+
+rtd_score:
+  _target_: src.callbacks.one_to_random_rtd_callback.OneToRandomRTDCallback
+  in_channels: 3072
+  out_channels: 2
+  device: cuda:0
+  rtd_batch_size: 500
+  rtd_n_trials: 10
+  pca: true

@@ -1,0 +1,77 @@
+name: optuna
+solutions:
+- params:
+    model.net.num_hidden: 698
+    model.net.block_1_nb_filter: 182
+    model.net.block_1_nb_layers: 3
+    model.net.block_2_nb_filter: 59
+    model.net.block_2_nb_layers: 4
+    model.net.block_3_nb_filter: 115
+    model.net.block_3_nb_layers: 4
+    model.net.block_4_nb_filter: 19
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 15
+    model.net.block_5_nb_layers: 3
+  values:
+  - 34.057071685791016
+  - 0.326200008392334
+- params:
+    model.net.num_hidden: 3321
+    model.net.block_1_nb_filter: 32
+    model.net.block_1_nb_layers: 4
+    model.net.block_2_nb_filter: 195
+    model.net.block_2_nb_layers: 2
+    model.net.block_3_nb_filter: 161
+    model.net.block_3_nb_layers: 2
+    model.net.block_4_nb_filter: 64
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 161
+    model.net.block_5_nb_layers: 1
+  values:
+  - 33.78898239135742
+  - 0.4458000063896179
+- params:
+    model.net.num_hidden: 2426
+    model.net.block_1_nb_filter: 206
+    model.net.block_1_nb_layers: 3
+    model.net.block_2_nb_filter: 196
+    model.net.block_2_nb_layers: 3
+    model.net.block_3_nb_filter: 157
+    model.net.block_3_nb_layers: 2
+    model.net.block_4_nb_filter: 49
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 143
+    model.net.block_5_nb_layers: 1
+  values:
+  - 32.2646598815918
+  - 0.4569999873638153
+- params:
+    model.net.num_hidden: 2389
+    model.net.block_1_nb_filter: 218
+    model.net.block_1_nb_layers: 3
+    model.net.block_2_nb_filter: 197
+    model.net.block_2_nb_layers: 3
+    model.net.block_3_nb_filter: 161
+    model.net.block_3_nb_layers: 2
+    model.net.block_4_nb_filter: 56
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 139
+    model.net.block_5_nb_layers: 1
+  values:
+  - 32.921180725097656
+  - 0.4465999901294708
+- params:
+    model.net.num_hidden: 2844
+    model.net.block_1_nb_filter: 41
+    model.net.block_1_nb_layers: 3
+    model.net.block_2_nb_filter: 219
+    model.net.block_2_nb_layers: 2
+    model.net.block_3_nb_filter: 157
+    model.net.block_3_nb_layers: 3
+    model.net.block_4_nb_filter: 44
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 137
+    model.net.block_5_nb_layers: 1
+  values:
+  - 32.367706298828125
+  - 0.4519999921321869

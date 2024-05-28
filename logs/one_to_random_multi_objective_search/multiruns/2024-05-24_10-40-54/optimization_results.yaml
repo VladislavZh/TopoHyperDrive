@@ -1,0 +1,62 @@
+name: optuna
+solutions:
+- params:
+    model.net.num_hidden: 3778
+    model.net.block_1_nb_filter: 5
+    model.net.block_1_nb_layers: 1
+    model.net.block_2_nb_filter: 246
+    model.net.block_2_nb_layers: 1
+    model.net.block_3_nb_filter: 12
+    model.net.block_3_nb_layers: 1
+    model.net.block_4_nb_filter: 73
+    model.net.block_4_nb_layers: 2
+    model.net.block_5_nb_filter: 11
+    model.net.block_5_nb_layers: 1
+  values:
+  - 87.76831817626953
+  - 0.30300000309944153
+- params:
+    model.net.num_hidden: 3254
+    model.net.block_1_nb_filter: 74
+    model.net.block_1_nb_layers: 1
+    model.net.block_2_nb_filter: 96
+    model.net.block_2_nb_layers: 1
+    model.net.block_3_nb_filter: 182
+    model.net.block_3_nb_layers: 2
+    model.net.block_4_nb_filter: 79
+    model.net.block_4_nb_layers: 2
+    model.net.block_5_nb_filter: 63
+    model.net.block_5_nb_layers: 1
+  values:
+  - 82.7590103149414
+  - 0.4293999969959259
+- params:
+    model.net.num_hidden: 3618
+    model.net.block_1_nb_filter: 207
+    model.net.block_1_nb_layers: 2
+    model.net.block_2_nb_filter: 130
+    model.net.block_2_nb_layers: 2
+    model.net.block_3_nb_filter: 93
+    model.net.block_3_nb_layers: 2
+    model.net.block_4_nb_filter: 137
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 127
+    model.net.block_5_nb_layers: 2
+  values:
+  - 73.52764129638672
+  - 0.44780001044273376
+- params:
+    model.net.num_hidden: 3517
+    model.net.block_1_nb_filter: 190
+    model.net.block_1_nb_layers: 2
+    model.net.block_2_nb_filter: 129
+    model.net.block_2_nb_layers: 2
+    model.net.block_3_nb_filter: 97
+    model.net.block_3_nb_layers: 2
+    model.net.block_4_nb_filter: 134
+    model.net.block_4_nb_layers: 1
+    model.net.block_5_nb_filter: 123
+    model.net.block_5_nb_layers: 2
+  values:
+  - 74.66548156738281
+  - 0.44699999690055847

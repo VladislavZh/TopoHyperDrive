@@ -1,0 +1,13 @@
+- model.net.num_hidden=1619
+- model.net.block_1_nb_filter=31
+- model.net.block_1_nb_layers=1
+- model.net.block_2_nb_filter=149
+- model.net.block_2_nb_layers=1
+- model.net.block_3_nb_filter=223
+- model.net.block_3_nb_layers=1
+- model.net.block_4_nb_filter=172
+- model.net.block_4_nb_layers=2
+- model.net.block_5_nb_filter=81
+- model.net.block_5_nb_layers=1
+- trainer=gpu
+- hparams_search=one_to_random_multiobjective
