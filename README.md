@@ -47,6 +47,14 @@ conda env create -f environment.yaml -n myenv
 conda activate myenv
 ```
 
+#### RTD
+Install the RTD as follows:
+
+```bash
+pip install git+https://github.com/simonzhang00/ripser-plusplus.git
+pip install git+https://github.com/IlyaTrofimov/RTD.git
+```
+
 ## How to run
 
 You can use the following link to reproduce the results https://colab.research.google.com/drive/1ZjdnuB5BbmxBUw5-k8WB3eYi5wuX1Vry?usp=sharing.
