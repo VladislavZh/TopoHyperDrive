@@ -149,3 +149,8 @@ The directory structure of a project:
 ├── setup.py                  <- File for installing project as a package
 └── README.md
 ```
+
+## Results
+
+With PCA dimensionality reduction and RTD score between the obtained embeddings and embeddings of the random model as a second objective, the method outperforms TPE approach. 
+![Results](paper/accuracy_val.jpg "Val Accuracy")
