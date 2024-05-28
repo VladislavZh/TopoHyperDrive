@@ -1,0 +1,40 @@
+_target_: src.models.image_classification_module.ImageClassificationModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.001
+  weight_decay: 1e-6
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 5
+
+scheduler_params:
+  monitor: val/loss
+  interval: epoch
+  frequency: 1
+
+net:
+  _target_: src.models.components.cnn.MetaSearchVGGLikeWithEmbeddings
+  in_channels: 3
+  in_height: 32
+  in_width: 32
+  num_hidden: 4096
+  num_classes: 100
+  block_1_nb_filter: 64
+  block_1_nb_layers: 1
+  block_2_nb_filter: 128
+  block_2_nb_layers: 1
+  block_3_nb_filter: 256
+  block_3_nb_layers: 1
+  block_4_nb_filter: 512
+  block_4_nb_layers: 1
+  block_5_nb_filter: 512
+  block_5_nb_layers: 1
+
+# compile model for faster training with pytorch 2.0
+compile: false
