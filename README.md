@@ -74,7 +74,7 @@ python .\src\train.py -m trainer=gpu callbacks=rtd_score_pca hparams_search=pca_
 ```
 
 Test the model from checkpoint, as a checkpoint one should use the checkpoint from the logs, e.g
-"logs/tpe_search/multiruns/2024-04-25_23-56-58/0/checkpoints/epoch_099.ckpt", some checkpoints can be found here https://drive.google.com/drive/u/0/folders/1UybZ9aFfjkdNBbgS3jVtf67YNeu7UDJh, for other checkpoints, please, write me in tg (@zhuzhel):
+"logs/tpe_search/multiruns/2024-05-22_17-44-08/0/checkpoints/epoch_029.ckpt", some checkpoints can be found here https://drive.google.com/drive/u/0/folders/1UybZ9aFfjkdNBbgS3jVtf67YNeu7UDJh, for other checkpoints, please, write me in tg (@zhuzhel):
 
 ```bash
 python src/eval.py -m trainer=gpu ckpt_path=???
